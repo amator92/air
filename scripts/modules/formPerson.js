@@ -47,8 +47,8 @@ const createFormPerson = (n) => {
     type: 'text',
     placeholder: 'Номер квитка',
     required: true,
-    minLength: '10',
-    maxLength: '10',
+    minLength: 10,
+    maxLength: 10,
   });
 
   fieldTicket.append(labelTicket, inputTicket);
