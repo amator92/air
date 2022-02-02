@@ -16,5 +16,3 @@ const init = (selectorApp, title) => {
 };
 
 init('.app', 'Виберіть тур');
-
-twertfgwerdgfdsfgsdf
