@@ -123,7 +123,6 @@ const checkSeat = (form, data) => {
     for(let i = 0; i < data.length; i++) {
       data[i]. seat = booking[i];
     }
-    console.log(data);
   });
 };
 
