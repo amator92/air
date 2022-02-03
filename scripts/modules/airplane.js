@@ -123,6 +123,23 @@ const checkSeat = (form, data) => {
     for(let i = 0; i < data.length; i++) {
       data[i]. seat = booking[i];
     }
+
+    const plane = document.querySelector('.plane');
+    plane.style.display = 'none';
+    const places = data.map(item => item.seat).join(', ');
+    const container = document.querySelector('.container');
+    const h = createElement('h2', {
+      className: 'plane',
+      textContent: `Дякуємо, ваші місця ${places}`,
+    });
+
+    h.style.border = 'solid 2px white';
+    h.style.borderRadius = '5px';
+    h.style.padding = '50px';
+    h.style.backgroundColor = 'rgba(164,89,164, 0.5)';
+    h.style.minWidth = '400px';
+
+    container.append(h);
   });
 };
 
