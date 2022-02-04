@@ -93,7 +93,7 @@ const createAirplane = (title, tourData) => {
 
     if(typeof type === 'number') {
       const blockSeat = createBlockSeat(n, type, bookingSeat);
-      n = n + type;
+      n += type;
       return blockSeat;
     }
   });
